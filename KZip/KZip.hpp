@@ -31,7 +31,6 @@
 #include <utility>
 #include <vector>
 
-// TODO(troldal): Is this required???
 #ifdef _WIN32
 #    include <direct.h>
 #endif
@@ -140,6 +139,8 @@ namespace KZip
     private:
         mz_zip_archive_file_stat m_stats;
     };
+
+    using ZipEntryData = std::vector<unsigned char>;
 
     /**
      *
